@@ -19,4 +19,7 @@ export class AppComponent {
   getName(): string{
     return 'peter';
   }
+  alertName(name){
+    alert(`Hi, ${name}`);
+  }
 }
