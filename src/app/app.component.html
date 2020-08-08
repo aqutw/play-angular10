@@ -21,4 +21,7 @@ test
 <input type="text" (keyup)="myEvent($event.target.value)" />
 <br>
 <input type="text" (keyup)="getVal($event.target.value)" />
-<br>
+<hr>
+<a [href]="linkHref">test property</a>
+<button type=button [disabled]="buttonDisabled">test property</button>
+<button type=button (click)="setProperty()">Set Property</button>

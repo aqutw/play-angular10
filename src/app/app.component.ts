@@ -8,6 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'youtube';
   str1 = 'string111';
+  linkHref = '';
+  buttonDisabled = true;
   obj = {
     a: 1,
     b: 2
@@ -30,5 +32,9 @@ export class AppComponent {
     this.currentVal = v;
     this.str1 = v;
     console.log(v);
+  }
+  setProperty(){
+    this.buttonDisabled = false;
+    this.linkHref = 'http://google.com';
   }
 }
