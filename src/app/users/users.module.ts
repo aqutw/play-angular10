@@ -11,7 +11,8 @@ import { SignupComponent } from './signup/signup.component';
     CommonModule
   ],
   exports:[
-    LoginComponent
+    LoginComponent,
+    SignupComponent
   ]
 })
 export class UsersModule { }
