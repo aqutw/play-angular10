@@ -22,4 +22,7 @@ export class AppComponent {
   alertName(name){
     alert(`Hi, ${name}`);
   }
+  myEvent(param1){
+    console.warn(param1);
+  }
 }

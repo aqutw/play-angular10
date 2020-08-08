@@ -10,3 +10,6 @@ test
 <app-login></app-login>
 <button type=button (click)="alertName('tony')">click me</button>
 <button type=button (click)="alertName(str1)">click me</button>
+<input type="text" #input1 (keyup)="myEvent(input1.value)" />
+<input type="text" #input2 (keyup.space)="myEvent(input2.value)" />
+<input type="text" (keyup)="myEvent($event.target.value)" />
