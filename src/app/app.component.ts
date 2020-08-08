@@ -12,6 +12,7 @@ export class AppComponent {
     a: 1,
     b: 2
   };
+  currentVal = '';
   arr = [
     'a1',
     'b2'];
@@ -24,5 +25,10 @@ export class AppComponent {
   }
   myEvent(param1){
     console.warn(param1);
+  }
+  getVal(v){
+    this.currentVal = v;
+    this.str1 = v;
+    console.log(v);
   }
 }

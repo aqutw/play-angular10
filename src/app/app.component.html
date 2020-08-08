@@ -9,7 +9,16 @@ test
 <app-user-list></app-user-list>
 <app-login></app-login>
 <button type=button (click)="alertName('tony')">click me</button>
+<br>
 <button type=button (click)="alertName(str1)">click me</button>
+<br>
 <input type="text" #input1 (keyup)="myEvent(input1.value)" />
+<br>
+<button type=button (click)="myEvent(input1.value)">click me input1.value</button>
+<br>
 <input type="text" #input2 (keyup.space)="myEvent(input2.value)" />
+<br>
 <input type="text" (keyup)="myEvent($event.target.value)" />
+<br>
+<input type="text" (keyup)="getVal($event.target.value)" />
+<br>
