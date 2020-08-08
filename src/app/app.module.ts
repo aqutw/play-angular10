@@ -1,5 +1,6 @@
+import { UsersModule } from './users/users.module';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, ApplicationRef } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { UserListComponent } from './user-list/user-list.component';
@@ -10,7 +11,8 @@ import { UserListComponent } from './user-list/user-list.component';
     UserListComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    UsersModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
