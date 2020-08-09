@@ -52,3 +52,21 @@ test
 <ng-template [ngIf]="color=='blue'">
   <p>Blue block</p>
 </ng-template>
+<hr>
+<div [ngSwitch]="color">
+  <h2 style=color:red *ngSwitchCase="'red'">
+    red color
+  </h2>
+  <h2 style=color:yellow *ngSwitchCase="'yellow'">
+    yellow color
+  </h2>
+  <h2 style=color:green *ngSwitchCase="'green'">
+    green color
+  </h2>
+  <h2 style=color:blue *ngSwitchCase="'blue'">
+    blue color
+  </h2>
+  <h2 style=color:gray *ngSwitchDefault>
+    gray color
+  </h2>
+</div>
