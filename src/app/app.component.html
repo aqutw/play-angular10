@@ -7,7 +7,9 @@ test
 <h3>{{obj.b}}</h3>
 <h3>{{arr}} {{arr.length}} {{arr[1]}}</h3>
 <h3>{{siteUrl}}</h3>
+App-user-list
 <app-user-list></app-user-list>
+app-login
 <app-login></app-login>
 <button type=button (click)="alertName('tony')">click me</button>
 <br>
@@ -106,4 +108,10 @@ test
 <button mat-flat-button color="accent">test material button</button>
 <mat-slider max="10" min="1"></mat-slider>
 <mat-slider step="4" tickInterval="3"></mat-slider>
+
+<ul>
+<li *ngFor="let item of aryUsers">
+  <app-users [user]="item"></app-users>
+</li>
+</ul>
 <app-footer></app-footer>

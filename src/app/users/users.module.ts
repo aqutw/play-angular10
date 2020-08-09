@@ -12,6 +12,7 @@ import { UsersComponent } from './users.component';
     CommonModule
   ],
   exports:[
+    UsersComponent,
     LoginComponent,
     SignupComponent
   ]

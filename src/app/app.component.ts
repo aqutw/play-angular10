@@ -69,6 +69,11 @@ export class AppComponent {
   arr2 = [
       {nnn: 'nna1'},
       {nnn: 'b2'}];
+  aryUsers = [
+    {name:'Tony1', age:11},
+    {name:'Tony2', age:12},
+    {name:'Tony3', age:13},
+  ];
   siteUrl = window.location.href;
   getName(): string{
     return 'peter';

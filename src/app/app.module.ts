@@ -1,3 +1,4 @@
+import { UsersComponent } from './users/users.component';
 import { UsersModule } from './users/users.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, ApplicationRef } from '@angular/core';
