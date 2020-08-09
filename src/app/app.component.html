@@ -1,7 +1,11 @@
 <app-header></app-header>
 test
-<h2>{{title}}</h2>
-<h3>{{str1}}</h3>
+<h2>{{title | uppercase | slice:2 }}</h2>
+<h2>{{title | uppercase | slice:2:6 }}</h2>
+<h2>{{money | currency:'USD' }}</h2>
+<h3>{{str1 | titlecase | lowercase}}</h3>
+<h3>{{ today | date }}</h3>
+<h3>{{ today | date:'fullDate' }}</h3>
 <h3>{{getName()}}</h3>
 <h3>{{obj}}</h3>
 <h3>{{obj.b}}</h3>

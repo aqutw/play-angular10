@@ -56,6 +56,8 @@ export class AppComponent {
   color = 'green';
   title = 'youtube';
   str1 = 'string111';
+  money = 100;
+  today = Date.now();
   linkHref = '';
   buttonDisabled = true;
   obj = {
