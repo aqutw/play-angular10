@@ -21,6 +21,9 @@ export class AppComponent {
   arr = [
     'a1',
     'b2'];
+  arr2 = [
+      {nnn: 'nna1'},
+      {nnn: 'b2'}];
   siteUrl = window.location.href;
   getName(): string{
     return 'peter';
