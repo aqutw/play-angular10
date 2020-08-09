@@ -73,3 +73,13 @@ test
 <ul>
   <li *ngFor="let item of arr2">{{item.nnn}}</li>
 </ul>
+<hr>
+<form #frm1="ngForm" (submit)="getFormValues(frm1.value)"><!--Both of (submit) or (ngSubmit) are OK!-->
+  <input ngModel type="text" name="username" />
+  <br><br>
+  <input ngModel type="text" name="age" />
+  <br><br>
+  <input ngModel type="text" name="addr" />
+  <br><br>
+  <button>0Get User Values</button><!--Both of <button> or <button type=submit> are OK!-->
+</form>

@@ -43,4 +43,7 @@ export class AppComponent {
     this.buttonDisabled = false;
     this.linkHref = 'http://google.com';
   }
+  getFormValues(val){
+    console.warn(val)
+  }
 }
