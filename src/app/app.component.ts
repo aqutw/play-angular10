@@ -99,7 +99,7 @@ export class AppComponent {
   updateColor(){
     this.color = 'purple';
   }
-  parentFunc(param){
-    console.info('parentFunc', param);
+  parentFunc(param, param2){
+    console.info('[parentFunc] parent got...', param, param2);
   }
 }

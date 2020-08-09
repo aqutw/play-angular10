@@ -8,12 +8,14 @@ import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 export class UsersComponent implements OnInit {
 
   @Input() user;
-  @Output() userFunc:EventEmitter<any> = new EventEmitter();
+  @Output() clickMeFunc:EventEmitter<any> = new EventEmitter();
   constructor() { }
 
   ngOnInit(): void {
     console.warn('this.user', this.user);
-    this.userFunc.emit("string111 from parentFunc emit");
+  }
+  clickMe(u){
+    this.clickMeFunc.emit(u, 'from child');
   }
 
 }

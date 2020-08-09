@@ -111,7 +111,7 @@ app-login
 
 <ul>
 <li *ngFor="let item of aryUsers">
-  <app-users [user]="item" (userFunc)="parentFunc($event)"></app-users>
+  <app-users [user]="item" (clickMeFunc)="parentFunc($event)"></app-users>
 </li>
 </ul>
 <app-footer></app-footer>
