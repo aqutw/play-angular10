@@ -6,6 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  isShow = true;
+  showFlag = 'yes';
+  color = 'green';
   title = 'youtube';
   str1 = 'string111';
   linkHref = '';

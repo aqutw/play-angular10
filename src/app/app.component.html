@@ -25,3 +25,30 @@ test
 <a [href]="linkHref">test property</a>
 <button type=button [disabled]="buttonDisabled">test property</button>
 <button type=button (click)="setProperty()">Set Property</button>
+<hr>
+<h1 *ngIf="isShow else elseBlock">
+    if Block here
+</h1>
+<ng-template #elseBlock>
+  <h1>else block</h1>
+</ng-template>
+<h1 *ngIf="showFlag=='no' else elseBlock">
+  if Block here
+</h1>
+<div *ngIf="showFlag=='yes'; then ifBlock0 else elseBlock0"></div>
+<ng-template #ifBlock0>
+  <p>if block0</p>
+</ng-template>
+<ng-template #elseBlock0>
+  <p>else block0</p>
+</ng-template>
+<br><br><br>
+<ng-template [ngIf]="color=='red'">
+  <p>Red block</p>
+</ng-template>
+<ng-template [ngIf]="color=='green'">
+  <p>Green block</p>
+</ng-template>
+<ng-template [ngIf]="color=='blue'">
+  <p>Blue block</p>
+</ng-template>
