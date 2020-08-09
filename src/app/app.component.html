@@ -84,5 +84,8 @@ test
   <br><br>
   <button>0Get User Values</button><!--Both of <button> or <button type=submit> are OK!-->
 </form>
-
+<div [style.backgroundColor]="color">test style binding</div>
+<div [style.backgroundColor]="'red'">test style binding</div>
+<button type="button" (click)="updateColor()">update Color</button>
+<div [style.backgroundColor]="showFlag!='no' ? 'blue' : 'green'">test style binding</div>
 <app-footer></app-footer>

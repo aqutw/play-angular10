@@ -46,4 +46,7 @@ export class AppComponent {
   getFormValues(val){
     console.warn(val)
   }
+  updateColor(){
+    this.color = 'purple';
+  }
 }
