@@ -77,8 +77,10 @@ test
 <hr>
 <form #frm1="ngForm" (submit)="getFormValues(frm1.value)"><!--Both of (submit) or (ngSubmit) are OK!-->
   <input ngModel type="text" name="username" />
+  {{frm1.value.username}}
   <br><br>
   <input ngModel type="text" name="age" />
+  {{frm1.value.age}}
   <br><br>
   <input ngModel type="text" name="addr" />
   <br><br>
